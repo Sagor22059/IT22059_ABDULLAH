@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Quiz</title></head>
+<body>
+<h2>বাংলা ভূগোল কুইজ</h2>
+<form th:action="@{/submit-quiz}" method="post">
+
+    <p>১. পৃথিবীর সর্বোচ্চ পর্বত কোনটি?</p>
+    <input type="radio" name="q1" value="ক" required /> ক. কিলিমানজারো<br/>
+    <input type="radio" name="q1" value="খ" /> খ. এভারেস্ট<br/>
+    <input type="radio" name="q1" value="গ" /> গ. আল্পস<br/>
+    <input type="radio" name="q1" value="ঘ" /> ঘ. হিমালয়<br/>
+
+    <p>২. বাংলাদেশের রাজধানী কোথায় অবস্থিত?</p>
+    <input type="radio" name="q2" value="ক" required /> ক. চট্টগ্রাম<br/>
+    <input type="radio" name="q2" value="খ" /> খ. খুলনা<br/>
+    <input type="radio" name="q2" value="গ" /> গ. ঢাকা<br/>
+    <input type="radio" name="q2" value="ঘ" /> ঘ. রাজশাহী<br/>
+
+    <br/><button type="submit">জমা দিন</button>
+</form>
+</body>
+</html>
